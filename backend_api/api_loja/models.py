@@ -36,7 +36,7 @@ class Product(Base):
 
 ### Class ###
 class Evaluetion(Base):
-    product = models.ForeignKey(Product, related_name='Product', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='evaluetion', on_delete=models.CASCADE)
     email = models.EmailField(max_length=50)    
     text = models.TextField()
 

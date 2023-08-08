@@ -5,17 +5,17 @@ from .models import Category, Product, Evaluetion
 class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Product
-        fiels = '__all__'
+        model = Category
+        fields = ['describe']
 
 ### --- ###
-class CategorySerializer(serializers.ModelSerializer):
+class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Category
+        model = Product
         fields = '__all__'
 ### --- ###
-class CategorySerializer(serializers.ModelSerializer):
+class EvaluetionSerializer(serializers.ModelSerializer):
 
     class Meta:
         write = {
